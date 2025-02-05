@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Categoria, Icono, RedSocial, Empresa, EmpresaRedSocial, Producto, CaracteristicaProducto, Servicio, Testimonio, MensajeContacto
+from .models import Categoria, Icono, RedSocial, Empresa, EmpresaRedSocial, Producto, CaracteristicaProducto, Servicio, Testimonio, MensajeContacto, Noticia
 
 admin.site.register(Categoria)
 admin.site.register(Icono)
@@ -13,3 +13,4 @@ admin.site.register(CaracteristicaProducto)
 admin.site.register(Servicio)
 admin.site.register(Testimonio)
 admin.site.register(MensajeContacto)
+admin.site.register(Noticia)

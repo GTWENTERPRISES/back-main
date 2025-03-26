@@ -101,10 +101,7 @@ DATABASES = {
         'PASSWORD': 'Cappa100..',
         'HOST': 'database-1.c3a00a6e07i7.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-            'charset': 'utf8mb4',
-        }
+        
     }
 }
 

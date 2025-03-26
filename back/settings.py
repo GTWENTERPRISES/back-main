@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dm+6=u@*qd$=6=p$yqd(pa46ntlhkg6k=fxp=j!i_qep%de5hk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app', 'localhost', '127.0.0.1']
 import os
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -91,12 +91,13 @@ WSGI_APPLICATION = 'back.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'camara',
-        'USER': 'camara_user',
-        'PASSWORD': 'cF7XodwumleymWyvA8GDDF7GAXxOnlCH',
-        'HOST': 'dpg-cugrrk2j1k6c73b1hgug-a.oregon-postgres.render.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nuevaa',  # Changed from 'wwwww' to default PostgreSQL database name
+        'USER': 'admin',
+        'PASSWORD': 'Cappa100..',
+        'HOST': 'database-1.c3a00a6e07i7.us-east-2.rds.amazonaws.com',
+        'PORT': '3306',
+        
     }
 }
 

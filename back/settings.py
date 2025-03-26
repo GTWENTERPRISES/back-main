@@ -27,6 +27,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app', 'localhost', '127.0.0.1', '*']
 import os
+# Add PyMySQL support
+import pymysql
+pymysql.install_as_MySQLdb()
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Application definition

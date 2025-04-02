@@ -57,7 +57,7 @@ class Producto(models.Model):
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT)
     descripcion = models.TextField()
     precio = models.DecimalField(max_digits=10, decimal_places=2)
-    imagen = models.URLField(blank=True, null=True)
+    imagen = models.URLField(blank=True, null=True, max_length=500)
     activo = models.BooleanField(default=True)
 
     def __str__(self):

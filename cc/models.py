@@ -36,7 +36,7 @@ class Empresa(models.Model):
     direccion = models.CharField(max_length=200)
     fecha_registro = models.DateTimeField(auto_now_add=True)
     activa = models.BooleanField(default=True)
-    logo = models.URLField(blank=True, null=True)
+    logo = models.URLField(blank=True, null=True, max_length=500)
 
     def __str__(self):
         return self.nombre
